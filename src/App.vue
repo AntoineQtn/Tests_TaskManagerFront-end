@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <TaskManager />
+    <header>
+      <h1>Task Manager</h1>
+    </header>
+    <main>
+      <TaskManager />
+    </main>
   </div>
 </template>
 
@@ -15,10 +20,14 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 20px;
+}
+header h1 {
+  font-size: 2rem;
+}
+main {
+  margin-top: 20px;
 }
 </style>

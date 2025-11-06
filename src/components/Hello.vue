@@ -8,6 +8,9 @@
 <script>
 import api from '../services/api';
 
+/**
+ * Component to display a greeting message.
+ */
 export default {
   name: 'HelloTitle',
   data() {
@@ -19,6 +22,7 @@ export default {
     try {
       // Appel à l'API pour récupérer le titre
       const response = await api.getHello();
+      console.log(response);
       this.title = response.data || response; // Mettez à jour la propriété avec le résultat
     } catch (error) {
       console.error('Erreur lors de la récupération du titre :', error);
